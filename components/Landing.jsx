@@ -20,9 +20,10 @@ const Landing = () => {
     //       <li className="nav-item">Login/Signup</li>
     //     </ul>
     //   </nav>
+    <div className='land'>
     <div className="landing-container">
   <nav className="navbar">
-    <div className="navbar-brand">Your Website</div>
+    <div className="navbar-brand">Safenet</div>
     <ul className="nav-items">
       <li className="nav-item">Home</li>
       <li className="nav-item">About Us</li>
@@ -39,6 +40,7 @@ const Landing = () => {
       <footer className="footer">
         <marquee direction="left">Alert! Cyber crooks are lurking in the shadows, ready to snatch your digital identity. Safeguard your data fortress with the shield of awareness. Stay savvy, stay secure, for your digital safety is paramount in the cyber wilderness.</marquee>
       </footer>
+    </div>
     </div>
   );
 };
