@@ -1,6 +1,8 @@
 // import SignLog from '../components/SignLog'
 // import './App.css'
-import SignUp from './SignUp'
+import Landing from './Landing'
+// import SignUp from './SignUp'
+
 
 
 function App() {
@@ -8,7 +10,7 @@ function App() {
 
   return (
     <>
-      <SignUp/>
+      <Landing/>
     </>
   )
 }

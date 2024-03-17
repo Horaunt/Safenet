@@ -26,10 +26,12 @@
   background-color: transparent;
   color: white;
   width: 300px; /* Increased width */
+  transition: transform 0.3s ease; /* Added transition for parallax effect */
 }
 
-.sign-up-form input[type="password"] {
-  margin-right: 0; /* Removed right margin */
+.sign-up-form input:hover {
+  transform: translateY(-5px); /* Parallax effect on hover */
+  box-shadow: 0 0 10px limegreen; /* Lime green shadow border effect */
 }
 
 .sign-up-form button {
@@ -41,11 +43,12 @@
   cursor: pointer;
   width: 250px; /* Increased width */
   font-size: 18px; /* Larger font size */
-  transition: transform 0.3s ease; /* Added transition for parallax effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for both parallax and shadow effect */
 }
 
 .sign-up-form button:hover {
   transform: translateY(-5px); /* Parallax effect on hover */
+  box-shadow: 0 0 20px limegreen; /* Lime green shadow border effect */
 }
 
 /* Make the "Sign Up" text relatively smaller */
@@ -53,4 +56,3 @@
   color: #4CAF50; /* Green color */
   font-size: 24px; /* Relative smaller font size */
 }
-
