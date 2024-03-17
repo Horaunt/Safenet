@@ -1,0 +1,35 @@
+.sign-up-container {
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sign-up-form {
+    text-align: center;
+    color: white;
+  }
+  
+  .sign-up-form input {
+    margin-bottom: 20px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+  }
+  
+  .sign-up-form input[type="password"] {
+    margin-right: 10px;
+  }
+  
+  .sign-up-form button {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
