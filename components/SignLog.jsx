@@ -1,8 +1,9 @@
-
 import React from 'react';
+import {useEffect} from "react";
+
 
 const SignLog = () => {
-    React.useEffect(() => {
+    useEffect(() => {
         const canvas = document.getElementById('canvas');
         const context = canvas.getContext('2d');
         const W = window.innerWidth;
