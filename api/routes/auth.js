@@ -8,16 +8,16 @@ import { verifyToken,verifyAdmin } from "../utils/verifyToken.js";
 const router = express.Router();
 const upload = multer();
 
-router.post('/signup', verifyAdmin, upload.single('profilePic'), async (req, res) => {
+router.post('/signup', upload.single('profilePic'), async (req, res) => {
     try {
-        const { username, password, gender, age } = req.body;
+        const { username, password, name, email, confirm  } = req.body;
         const salt = bcrypt.genSaltSync(10);
         const hash = bcrypt.hashSync(password , salt);
         const existingUser = await User.findOne({ username });
         if (existingUser) {
             return res.status(400).json({ message: 'Username already exists' });
         }
-        const newUser = new User({username: username, password: hash, gender :gender, age : age, });
+        const newUser = new User({username: username, password: hash, email :email, name: name, });
         if (req.file) {
             const profilePicBuffer = req.file.buffer;
             const profilePicBase64 = profilePicBuffer.toString('base64');

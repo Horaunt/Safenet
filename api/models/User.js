@@ -16,12 +16,12 @@ const UserSchema = new mongoose.Schema({
         type: Boolean,
         default: false,
     },
-    gender: {
+    email: {
         type: String,
         // required: true,
     },
-    age: {
-        type: Number,
+    name: {
+        type: String,
         // required: true,
         min: 14,
         max: 85,
