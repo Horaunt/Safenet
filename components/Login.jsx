@@ -11,12 +11,14 @@ console.log('Logging in with:', username, password);
 }
 
 return (
-<div>
+<div className='login'>
     <h1 className='heading'>Login Page</h1>
     <form onSubmit={handleLogin}>
     <div>
-        <label htmlFor="username">Username:</label>
+        <label htmlFor="username">Username:  </label>
+        <br></br>
         <input 
+        placeholder='Username'
         type="text" 
         id="username" 
         value={username} 
@@ -24,8 +26,10 @@ return (
         />
     </div>
     <div>
-        <label htmlFor="password">Password:</label>
+        <label htmlFor="password">Password:  </label>
+        <br></br>
         <input 
+        placeholder='Password'
         type="password" 
         id="password" 
         value={password} 
