@@ -1,6 +1,7 @@
 import React from 'react';
 import {useEffect} from "react";
 import Background from './Background';
+import './SignLog.css';
 
 
 const SignLog = () => {
