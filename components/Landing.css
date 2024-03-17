@@ -1,0 +1,48 @@
+.landing-container {
+    background-color: black;
+    color: limegreen;
+    height: 100vh;
+  }
+  
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+.navbar-brand {
+    font-size: 24px;
+  }
+  
+.nav-items {
+    list-style-type: none;
+    display: flex;
+  }
+  
+.nav-item {
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
+.header {
+    padding: 20px;
+  }
+  
+.news-card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #111;
+    padding: 10px;
+    font-size: 18px;
+  }
+  
