@@ -1,14 +1,18 @@
-import SignLog from '../components/SignLog'
-import './App.css'
+import { BrowserRouter } from "react-router-dom";
 
-function App() {
-  
 
+
+
+const App = () => {
   return (
-    <>
-      <SignLog/>
-    </>
-  )
+    <BrowserRouter>
+      
+      
+
+      
+      
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
