@@ -1,12 +1,13 @@
-import SignLog from '../components/SignLog'
-import './App.css'
+// import SignLog from '../components/SignLog'
+// import './App.css'
+import Login from '../components/Login'
 
 function App() {
   
 
   return (
     <>
-      <SignLog/>
+      <Login/>
     </>
   )
 }
