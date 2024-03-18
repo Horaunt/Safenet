@@ -113,7 +113,7 @@ const Home = () => {
         <input type="text" placeholder="Search..." />
         <button>Search</button>
       </div>
-      <div className="sections">
+            <div className="sections">
         <a href="http://" target="_blank" rel="noopener noreferrer"><Sections/></a>
         <a href="http://" target="_blank" rel="noopener noreferrer"><Sections/></a>
         <a href="http://" target="_blank" rel="noopener noreferrer"><Sections/></a>
