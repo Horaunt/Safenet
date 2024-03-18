@@ -1,48 +1,98 @@
 .landing-container {
-    background-color: black;
-    color: limegreen;
-    height: 100vh;
-  }
+  background-color: black;
+  color: limegreen;
   
+  
+   /* Ensure the container covers the full viewport height */
+}
+
+.landing{
+  margin: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+min-width: 100vw;
+min-height: 100vh;
+overflow: hidden; 
+}
+
+
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-  }
-  
+  background-color: black; /* Set navbar background to black */
+  width: 100%; /* Cover the full width of the container */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
 .navbar-brand {
-    font-size: 24px;
-  }
-  
+  font-size: 24px;
+  color: limegreen; /* Set navbar brand color to lime green */
+}
+
 .nav-items {
-    list-style-type: none;
-    display: flex;
-  }
-  
+  list-style-type: none;
+  display: flex;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
 .nav-item {
-    margin-right: 20px;
-    cursor: pointer;
-  }
-  
+  margin-right: 10px; /* Decrease the margin between items */
+  cursor: pointer;
+  color: limegreen; /* Set navbar item color to lime green */
+  font-size: 16px; /* Decrease font size */
+}
+
 .header {
-    padding: 20px;
-  }
-  
+  padding: 20px;
+  background-color: black; /* Set header background to black */
+}
+
 .news-card {
-    background-color: #333;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #111;
-    padding: 10px;
-    font-size: 18px;
-  }
-  
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: limegreen; /* Set news card text color to lime green */
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #111;
+  padding: 10px;
+  font-size: 18px;
+  color: limegreen; /* Set footer text color to lime green */
+}
+
+.video-container {
+  position: relative;
+  width: 100%; /* Cover the full width of the container */
+  height: 315px; /* Adjust the height as needed */
+  overflow: hidden;
+}
+
+.youtube-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.youtube-video:hover {
+  pointer-events: none; /* Disable pointer events when hovering */
+}
+
+.youtube-video::-webkit-media-controls-start-playback-button {
+  display: none; /* Hide the play button */
+}
+
+.youtube-video:hover .ytp-chrome-bottom,
+.youtube-video:hover .ytp-chrome-top {
+  display: none !important;
+}
