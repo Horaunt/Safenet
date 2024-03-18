@@ -1,14 +1,49 @@
 import { useState } from 'react';
 import '..//components/Login.css';
+import Cookies from 'js-cookie';
+import { useHistory } from 'react-router-dom';
 
 const Login = () => {
 const [username, setUsername] = useState('');
 const [password, setPassword] = useState('');
+const history = useHistory();
 
-const handleLogin = (e) => {
+const handleLogin = async(e) => {
 e.preventDefault();
 console.log('Logging in with:', username, password);
-}
+
+
+    try {
+      const response = await fetch('http://localhost:8800/auth/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ username, password }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        // if(!data.isAdmin){
+        //   return console.error('You are not Admin');
+        // } 
+        
+        console.log('Login successful', data);
+
+        
+        Cookies.set('token', data.token, { expires: 7 });
+
+    
+        history.push('/');
+      } else {
+        console.error('Login failed', data);
+      }
+    } catch (error) {
+      console.error('Error during login', error);
+    }
+  };
+
 
 return (
 <div className='login'>

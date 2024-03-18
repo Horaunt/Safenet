@@ -1,6 +1,7 @@
 import React from 'react';
 import './SignUp.css'; 
 
+
 const SignUp = () => {
   const create = async () => {
     try {
@@ -23,6 +24,7 @@ const SignUp = () => {
 
         if (response.ok) {
             console.log('User created successfully', data);
+            alert('User created successfully');
             // viewAll();
         } else {
             console.error('Error creating user', data);
