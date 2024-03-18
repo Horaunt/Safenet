@@ -2,6 +2,7 @@ import { useState } from 'react';
 import '..//components/Login.css';
 import Cookies from 'js-cookie';
 import { useHistory } from 'react-router-dom';
+import Background from './Background';
 
 const Login = () => {
 const [username, setUsername] = useState('');
@@ -46,7 +47,9 @@ console.log('Logging in with:', username, password);
 
 
 return (
+    
 <div className='login'>
+    {/* <Background/> */}
     <h1 className='heading'>Login Page</h1>
     <form onSubmit={handleLogin}>
     <div>
