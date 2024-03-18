@@ -40,10 +40,10 @@ export const navLinks = [
     id: "contact",
     title: "Contact",
   },
-  {
-    id: "about",
-    title: "Login/Signup",
-  },
+  // {
+  //   id: "about",
+  //   title: "Login/Signup",
+  // },
   
 ];
 

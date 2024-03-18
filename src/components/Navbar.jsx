@@ -6,9 +6,14 @@ import { navLinks } from "../constants";
 import {  menu, close,horaunt } from "../assets";
 
 const Navbar = () => {
+
+
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+
+  const handleClick = () => {
+  }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -58,9 +63,12 @@ const Navbar = () => {
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              <a  href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
+          <li onClick={handleClick} className={`${
+                active  ? "text-white" : "text-secondary"
+              } hover:text-white text-[18px] font-medium cursor-pointer`}>SignUp</li>
         </ul>
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
