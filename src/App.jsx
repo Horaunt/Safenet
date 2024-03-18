@@ -1,7 +1,8 @@
 import SignLog from '../components/SignLog'
 import Login from '../components/Login'
 import Landing from '../components/Landing';
-import SignUp from '../components/SignUp'
+import SignUp from '../components/SignUp';
+import Home from '../components/Home';
 
 import './App.css'
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
@@ -11,7 +12,7 @@ function App() {
 
   return (
     <>
-      <Router>
+      {/* <Router>
         <Switch>
           <Route path="/" exact>
             <Landing/>
@@ -26,8 +27,8 @@ function App() {
             <SignLog/>
           </Route>
         </Switch>
-      </Router>
-      
+      </Router> */}
+      <Home/>
     </>
   )
 }
